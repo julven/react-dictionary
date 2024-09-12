@@ -59,31 +59,19 @@ const Word = () => {
 									      	{xx.synonyms.length > 0 && 
 									      	<div className="d-flex gap-1 flex-wrap 1">
 									      		<p className="fst-italic mb-1">synonyms: </p>
-									      		{xx.synonyms.map((xxx, iii) => {
-									      		return(
-									      			<>
-									      				<p  key={iii} className="badge rounded-pill text-bg-secondary mb-1 px-2">{xxx}</p>
-									      			</>
-									      		)
-									      		})}
+									      		{xx.synonyms.map((xxx, iii) => <p  key={iii} className="badge rounded-pill text-bg-secondary mb-1 px-2">{xxx}</p>)}
 
 									      	</div>
 									      	}
 									      	{xx.antonyms.length > 0 && 
 									      	<div className="d-flex gap-1  flex-wrap ">
 									      		<p className="fst-italic mb-1">antonyms: </p>
-									      		{xx.antonyms.map((xxx, iii) => {
-									      		return(
-									      			<>
-									      				<p key={iii} className="badge rounded-pill text-bg-secondary mb-1 px-2">{xxx}</p>
-									      			</>
-									      		)
-									      		})}
+									      		{xx.antonyms.map((xxx, iii) => <p key={iii} className="badge rounded-pill text-bg-secondary mb-1 px-2">{xxx}</p>)}
 
 									      	</div>
 									      	}
 
-									      	{xx.example && <p> <span className="fst-italic">example:</span> {xx.example}</p>}
+									      	{xx.example && <p> <span className="fst-italic fw-bold">example:</span> {xx.example}</p>}
 									      </div>
 									    </div>
 									  </div>

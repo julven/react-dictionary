@@ -12,9 +12,10 @@ const About = () => {
 		<div className="modal fade" id="exampleModal"tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div className="modal-dialog modal-lg">
 		    <div className="modal-content">
-		      <div className="modal-header">
-		        <h1 className="modal-title fs-5" id="exampleModalLabel">About</h1>
-		        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      <div className="modal-header d-flex justify-content-between bg-dark" >
+		        <h1 className="modal-title fs-5 text-white" id="exampleModalLabel">About</h1>
+		        {/*<button type="button" className="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>*/}
+		        <i className="bi bi-x-lg text-white " data-bs-dismiss="modal" aria-label="Close" style={{cursor: "pointer"}}></i>
 		      </div>
 		      <div className="modal-body">
 		      <div className="container">
@@ -63,7 +64,7 @@ const About = () => {
 								website: <br/> 
 								<ul>	
 									<li>
-										<a href="https://julven.000webhostapp.com">julven.000webhostapp.com </a>
+										<a href="https://julven.epizy.com">julven.epizy.com </a>
 									</li>
 								</ul>								
 							</span>
